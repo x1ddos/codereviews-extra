@@ -1,0 +1,3 @@
+To run locally don't forget to initialize submodules with
+
+  git submodule update --init

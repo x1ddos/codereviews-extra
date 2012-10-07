@@ -1,8 +1,13 @@
-application: reviewmycode
-version: 1
+application: codereview-extra
+version: use-version-arg
+
 runtime: go
 api_version: go1
 
 handlers:
+- url: /(favicon\.ico)
+  static_files: static/\1
+  upload: static/(favicon\.ico)
+  
 - url: /.*
   script: _go_app

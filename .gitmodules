@@ -1,0 +1,3 @@
+[submodule "code.google.com/p/codereviews-extra.rietveld"]
+	path = code.google.com/p/codereviews-extra.rietveld
+	url = https://code.google.com/p/codereviews-extra.rietveld/

@@ -1,0 +1,13 @@
+{{define "content"}}
+<p>Here's a list of [{{.Count}}] sample issues from codereview.appspot.com.</p>
+
+  {{range .Issues}}
+    <div style="margin-bottom: 1em;">
+      <a href="https://codereview.appspot.com/{{.Id}}" target="_blank">
+        <strong>[{{.Id}}] {{.Subject}}</strong>
+      </a><br>
+      Base URL: {{.BaseUrl}}<br>
+      Owner: <a href="mailto:{{.OwnerEmail}}" title="{{.Owner}}">{{.Owner}}</a>
+    </div>
+  {{end}}
+{{end}}
